@@ -1,0 +1,176 @@
+
+--> container        (center + fixed width)
+--> container-fluid  (full width 100%)
+
+----------------------------------------------------------------
+                        Typography 
+----------------------------------------------------------------
+
+--> .display-1
+--> .display-2
+--> .display-3
+--> .display-4
+
+Note: 1rem = 16px
+
+----------------------------------------------------------------
+                        Text colors
+----------------------------------------------------------------
+
+--> text-primary
+--> text-secondary
+--> text-success
+--> text-danger
+--> text-warning
+--> text-info
+--> text-dark
+--> text-light
+--> text-muted
+--> text-white
+
+----------------------------------------------------------------
+                        Background colors
+----------------------------------------------------------------
+
+--> bg-primary
+--> bg-secondary
+--> bg-success
+--> bg-danger
+--> bg-warning
+--> bg-info
+--> bg-dark
+--> bg-light
+--> bg-transparent
+--> bg-white
+
+----------------------------------------------------------------
+                        text Utilities
+----------------------------------------------------------------
+
+--> text-uppercase
+--> text-lowercase
+--> text-capitalize
+--> text-decoration-none
+--> text-decoration-overline
+--> text-decoration-underline
+--> text-decoration-line-through
+--> text-start (left align)
+--> text-center
+--> text-end (right align)
+--> fw-bold
+--> fw-bolder
+--> fw-light
+--> fw-lighter
+--> fst-italic
+--> fst-normal
+--> fs-1(largest) to fs-6(smallest) 
+
+----------------------------------------------------------------
+                        borders
+----------------------------------------------------------------
+
+--> border 
+--> border-0 (remove all borders)
+--> border-top 
+--> border-bottom 
+--> border-start
+--> border-end
+--> border-primary
+--> border-secondary
+--> border-success
+--> border-danger
+--> border-warning
+--> border-info
+--> border-dark
+--> border-light
+--> border-white
+--> border-1 to border-5
+--> rounded (0.25 rem)(rounded corner)
+--> rounded-circle (border-radius=50%)
+
+----------------------------------------------------------------
+                        spacing Utility
+----------------------------------------------------------------
+
+--> m (margin)
+--> p (padding)
+
+----------------------------------------------------------------
+                        side
+----------------------------------------------------------------
+
+--> t (top)
+--> b (bottom)
+--> s (start)
+--> e (end)
+--> x (left-right)
+--> y (top+bottom)
+
+----------------------------------------------------------------
+                        size
+----------------------------------------------------------------
+
+0=0
+1=0.25rem
+2=0.5rem
+3=1rem
+4=1.5rem
+5=3rem
+auto = auto(margin only)
+
+Note: m-3 (margin 1rem on all side)
+Note: mt-2 (margin-top 0.5)
+Note: px-4 (padding left+right 1.5rem)
+
+--> w-25 (25%)
+--> w-50 (50%)
+--> w-100 (100%)
+--> w-auto (auto)
+
+--> h-25 (25%)
+--> h-50 (50%)
+--> h-100 (100%)
+--> h-auto (auto)
+
+----------------------------------------------------------------
+                        tables
+----------------------------------------------------------------
+
+--> table
+--> table-striped
+--> table-bordered
+--> table-borderless
+--> table-hover
+--> table-sm
+--> table-dark
+--> table-light
+--> table-primary
+--> table-secondary
+--> table-danger
+--> table-success
+--> table-warning
+--> table-info
+--> table-dark
+--> table-light
+--> table-responsive
+
+----------------------------------------------------------------
+                        Grid
+----------------------------------------------------------------
+
+--> col
+--> col-*
+--> col-sm-*
+--> col-lg-*
+--> col-md-*
+--> col-xl-*
+--> col-xxl-*
+
+Note : MIPM
+
+--> (extra small) .col- -> <576px
+--> (small) .col-sm-*-> >= 576px
+--> (medium) .col-md-*-> >= 768px
+--> (large) .col-lg-* -> >=992px
+--> (Extra large) .col-xl-* -> >=992px
+--> (Extra Extra large) .col-xxl-* -> >=1200px
