@@ -58,7 +58,7 @@ Note: 1rem = 16px
 --> text-center
 --> text-end (right align)
 --> fw-bold
---> fw-bolder
+--> fw-bolder *
 --> fw-light
 --> fw-lighter
 --> fst-italic
@@ -174,3 +174,20 @@ Note : MIPM
 --> (large) .col-lg-* -> >=992px
 --> (Extra large) .col-xl-* -> >=992px
 --> (Extra Extra large) .col-xxl-* -> >=1200px
+
+----------------------------------------------------------------
+                        shodow
+----------------------------------------------------------------
+
+--> shodow-sm (small)
+--> shodow (medium)
+--> shodow-lg (large)
+
+----------------------------------------------------------------
+                        img
+----------------------------------------------------------------
+
+--> rounded
+--> rounded-circle
+--> img-thumbnail
+--> img-fluid (responsive img)
