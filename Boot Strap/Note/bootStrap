@@ -191,3 +191,158 @@ Note : MIPM
 --> rounded-circle
 --> img-thumbnail
 --> img-fluid (responsive img)
+
+----------------------------------------------------------------
+                        display
+----------------------------------------------------------------
+
+--> d-none (hide )
+--> d-inline (same line)
+--> d-block (full width)
+--> d-inline-clock (no line break)(setting width & height)
+
+
+----------------------------------------------------------------
+                        flex
+----------------------------------------------------------------
+
+--> d-flex
+--> d-line-flex
+--> flex-row
+--> flex-row-reverse
+--> flex-column
+--> flex-column-reverse
+--> flex-content-start
+--> flex-content-end
+--> flex-content-center
+--> flex-content-between
+--> flex-content-around
+--> flex-content-evenly
+--> flex-items-start
+--> flex-items-end
+--> flex-items-start
+--> flex-wrap
+
+----------------------------------------------------------------
+                        alerts
+----------------------------------------------------------------
+
+--> alert
+--> alert-success
+--> alert-danger
+--> alert-info
+--> alert-warning
+--> alert-dark
+--> alert-light
+--> alert-primary
+--> alert-secondary
+--> alert-dismissible (make alert closable)
+--> fade (animation)
+--> show (make fude animation visible)
+--> btn-close (b5 close (x) button )
+--> data-bs-dismiss="alert" (dismiss alert button)
+
+----------------------------------------------------------------
+                        button (<a>,<input>,<button>)
+----------------------------------------------------------------
+
+--> btn
+--> btn-success
+--> btn-danger
+--> btn-info
+--> btn-warning
+--> btn-dark
+--> btn-light
+--> btn-primary
+--> btn-secondary
+--> btn-link
+
+----------------------------------------------------------------
+                        button outline
+----------------------------------------------------------------
+
+--> btn-outline-primary
+--> btn-outline-info .......
+
+----------------------------------------------------------------
+                        button size
+----------------------------------------------------------------
+
+--> btn-lg (large)
+--> btn-sm (large)
+--> default
+
+----------------------------------------------------------------
+                        block level button
+----------------------------------------------------------------
+
+--> w-100
+
+----------------------------------------------------------------
+                        spinners
+----------------------------------------------------------------
+
+--> bordered spinner
+--> colored spinner
+--> Growing spinner
+--> spinner size
+--> button with spinner
+
+
+----------------------------------------------------------------
+                        Dropdowns
+----------------------------------------------------------------
+
+--> dropdowns
+--> btn
+--> btn-secondary (color)
+--> dropdown-toggle
+--> dropdown-menu
+--> dropdown-item (link items)
+--> data-bs-toggle="dropdown"
+
+----------------------------------------------------------------
+                        icon
+----------------------------------------------------------------
+
+--> copy kroooo
+
+----------------------------------------------------------------
+                        cards
+----------------------------------------------------------------
+
+--> cards
+--> cards-img-top
+--> cards-body
+--> cards-title
+--> cards-text
+--> cards-header
+--> card-link
+
+----------------------------------------------------------------
+                        collapse
+----------------------------------------------------------------
+
+--> show details (on click show & hide)  large amount of content
+
+--> collapse
+--> btn-primary (light blue button)
+--> data-bs-toggle="collapse"
+--> href="#ex1"
+--> data-bs-target="#ex1"
+--> id="ex1"
+--> card-body
+--> card
+
+
+----------------------------------------------------------------
+                        Accordion
+----------------------------------------------------------------
+                (pb - 395,403,407,409,410)
+--> accordion
+--> accordion-item
+--> accordion-header
+--> accordion-button
+--> data-bs-toggle="collapse"
+--> data-bs-target="#one"
+--> accordion-body
