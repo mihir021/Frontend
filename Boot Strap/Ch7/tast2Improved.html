@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Dark Modern</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+
+        body {
+            background-color: #0c0c0c;
+            color: white;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        /* Glass Navbar */
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            background: rgba(20, 20, 20, 0.65);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-link {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            transition: 0.2s;
+        }
+        .nav-link:hover {
+            color: #e50914 !important;
+        }
+
+        .search-box {
+            background: rgba(255,255,255,0.15);
+            border: none;
+            color: white;
+        }
+        .search-box:focus {
+            background: rgba(255,255,255,0.22);
+            color: white;
+            box-shadow: none;
+        }
+
+        /* Carousel */
+        .carousel-item img {
+            max-height: 420px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 0 40px rgba(255,255,255,0.1);
+        }
+
+        .carousel-caption h1 {
+            font-weight: 600;
+            text-shadow: 0 0 8px black;
+        }
+
+        .btn-danger {
+            background: #e50914;
+            border: none;
+        }
+        .btn-danger:hover {
+            background: #f6121d;
+        }
+
+        /* Product Cards */
+        .product-card img {
+            width: 100%;
+            border-radius: 12px;
+            transition: 0.35s;
+        }
+        .product-card img:hover {
+            transform: scale(1.06);
+            box-shadow: 0 0 20px rgba(255,255,255,0.15);
+        }
+
+        .product-card .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        .footer-box {
+            background: linear-gradient(to top, #000, #121212);
+            padding: 40px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Modal Dark Theme */
+        .modal-content {
+            background: #1a1a1a;
+            color: white;
+        }
+        .modal-header, .modal-footer {
+            border-color: rgba(255,255,255,0.1);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark glass-nav fixed-top py-2">
+        <div class="container-fluid">
+
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="cat.jpg" width="34" height="28" class="rounded">
+                <span class="ms-2 fw-semibold">MySite</span>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><h6 class="dropdown-header">Product 1</h6></li>
+                            <li><a class="dropdown-item" href="#">p1</a></li>
+                            <li><a class="dropdown-item" href="#">p2</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">p3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Category</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item">Male <i class="bi bi-gender-male"></i></a></li>
+                            <li><a class="dropdown-item">Women <i class="bi bi-gender-female"></i></a></li>
+                            <li><a class="dropdown-item">Kids</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex me-3">
+                    <input class="form-control form-control-sm search-box" type="search" placeholder="Search">
+                </form>
+
+                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <br><br><br>
+
+
+    <!-- CAROUSEL -->
+    <div id="carouselex" class="carousel slide mt-4" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselex" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselex" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselex" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="2500">
+                <img src="cat.jpg" class="d-block mx-auto w-50">
+                <div class="carousel-caption">
+                    <h1>First Image</h1>
+                    <a class="btn btn-danger">View All</a>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="cat2.jpeg" class="d-block mx-auto w-50">
+                <div class="carousel-caption">
+                    <h1>Second Image</h1>
+                    <a class="btn btn-danger">View All</a>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="cat4.jpeg" class="d-block mx-auto w-50">
+                <div class="carousel-caption">
+                    <h1>Third Image</h1>
+                    <a class="btn btn-danger">View All</a>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselex" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselex" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCT GRID -->
+    <div class="container my-5">
+        <div class="row text-center">
+
+            <div class="col-lg-3 mb-4 product-card">
+                <a class="btn btn-outline-light btn-sm">Link B</a>
+                <img src="cat.jpg" class="mt-2">
+            </div>
+
+            <div class="col-lg-3 mb-4 product-card">
+                <a class="btn btn-outline-light btn-sm">Link B</a>
+                <img src="cat.jpg" class="mt-2">
+            </div>
+
+            <div class="col-lg-3 mb-4 product-card">
+                <a class="btn btn-outline-light btn-sm">Link B</a>
+                <img src="cat.jpg" class="mt-2">
+            </div>
+
+            <div class="col-lg-3 mb-4 product-card">
+                <a class="btn btn-outline-light btn-sm">Link B</a>
+                <img src="cat.jpg" class="mt-2">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer-box text-center text-secondary">
+        <i class="bi bi-c-circle"></i>
+        <p class="mt-2">
+            ta recuperferendis necessitatibus voluptas neque <br>
+            numquam error nostrum!
+        </p>
+    </div>
+
+
+
+    <!-- LOGIN MODAL -->
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label>Email</label>
+                            <input type="email" class="form-control bg-dark text-white">
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Password</label>
+                            <input type="password" class="form-control bg-dark text-white">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-success" id="loginSubmitBtn">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- LOGIN SUCCESS MODAL -->
+    <div class="modal fade" id="loginStatus">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Login Status</h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-success fw-bold">
+                    Login Successful
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FIX LOGIN BUTTON -->
+    <script>
+        document.getElementById("loginSubmitBtn").addEventListener("click", function () {
+
+            var loginModal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
+            loginModal.hide();
+
+            setTimeout(function () {
+                var successModal = new bootstrap.Modal(document.getElementById("loginStatus"));
+                successModal.show();
+            }, 300);
+
+        });
+    </script>
+
+</body>
+</html>
