@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        (function (){
+            document.writeln('non name function <br>')
+        })()
+        function fun(a,b){
+            document.writeln((a+b)+'<br>')
+            return a+b
+        }
+        var a1 = function abc(x,y){
+            fun()
+            return x+y
+        } 
+    </script>
+</head>
+<body>
+    <button type="button" onclick="fun(1,3)"> click</button>
+</body>
+</html>

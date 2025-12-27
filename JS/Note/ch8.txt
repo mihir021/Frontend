@@ -1,0 +1,106 @@
+-----------------------------------------------------------------------------------
+                        Internal JS
+-----------------------------------------------------------------------------------
+
+document.write("hello world ")
+document.writeln("hello world with ln")
+console.log("hello world log")
+
+-----------------------------------------------------------------------------------
+                        extranal JS
+-----------------------------------------------------------------------------------
+
+<script src="demo.js"></script>
+
+-----------------------------------------------------------------------------------
+                        ECMA script (european computer manufacturers association)
+-----------------------------------------------------------------------------------
+
+                        -->Modan JS 
+
+`` (back tick )
+document.write(`hello`)
+
+-----------------------------------------------------------------------------------
+                        variable (unique name -> identifier)
+-----------------------------------------------------------------------------------
+
+--> Must start with (A-Z),_ underscrore , $ 
+--> Can contains digits after char
+--> case sansitive 
+--> can not use reserved keyword (class = 10)
+
+----------------------------> Type of variable <------------------------------------
+
+--> implicit (automatically) eg x=10 , y=20
+--> var keyword (var a = 10)
+--> let keyword (let a = 'aaa')
+--> const keyword (const pi = 3.14)
+
+-----------------------------------------------------------------------------------
+                        Data type 
+-----------------------------------------------------------------------------------
+
+--> primitive datatype 
+--> Non-primitive datatype 
+
+----------------------------> Primitive Data Type <---------------------------------
+
+string var a = 'hello'
+Number var a = 10
+Boolean var a = true
+undefined var name cl(name)
+null var a = null
+
+----------------------------> Non-Primitive Data Type <-----------------------------
+
+--> Array 
+--> Object 
+
+-----------------------------------------------------------------------------------
+                        Condition's and loop
+-----------------------------------------------------------------------------------
+
+--> if 
+--> if else
+--> else if
+--> switch
+--> ternary (? : ) 
+
+--------------------------------------> loops <------------------------------------
+
+--> for 
+--> while
+--> do while 
+--> for in (with array)
+--> for in (with object)
+
+-----------------------------------------------------------------------------------
+                        Array method 
+-----------------------------------------------------------------------------------
+
+--> push() insert the element (end of array)
+--> pop()  remove element (last element)
+--> map()  trasfroming each element (creates a new array)
+--> filter()  pass a Conditions ( creates a new array)
+--> ForEach()  specifically used for ui/ux
+--> includes()  check if array Conditions a value
+--> find()  find element 
+
+-----------------------------------------------------------------------------------
+                        Operators  ++ and --
+-----------------------------------------------------------------------------------
+
+--> pre - incriment 
+--> post - incriment
+--> pre - decriment 
+--> post - decriment 
+
+-----------------------------------------------------------------------------------
+                        Es6 function 
+-----------------------------------------------------------------------------------
+
+functionName = (para1 , para2 , para3 , para4 ..., paarN ) => Expration 
+
+
+
