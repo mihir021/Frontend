@@ -1,0 +1,6 @@
+localStorage.setItem("username","abc")
+let p1 = localStorage.getItem("username")
+document.writeln(p1)
+localStorage.setItem("username","abcd")
+localStorage.removeItem("username")
+// localStorage.clear()

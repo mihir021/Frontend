@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CSS STYLES --- */
+        
+        /* 1. Variables for Colors */
+        :root {
+            --bg-dark: #202830;       /* Dark background */
+            --text-white: #ffffff;
+            --text-muted: #b0b8c0;
+            --accent-green: #8ce9a9;  /* Light green button color */
+            --accent-green-hover: #7add95;
+        }
+
+        /* 2. Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.3s ease;
+        }
+
+        /* 3. Navigation Bar */
+        header.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 60px;
+            font-size: 14px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.5px;
+        }
+
+        /* The green logo shape */
+        .logo span {
+            color: var(--accent-green);
+            font-size: 24px;
+            margin-right: 5px;
+            font-weight: 900;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--text-white);
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+            margin-left: 20px;
+            padding-left: 20px;
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* 4. Buttons */
+        .btn {
+            padding: 10px 25px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-login {
+            background: transparent;
+            color: var(--text-white);
+        }
+
+        .btn-signup {
+            background-color: var(--accent-green);
+            color: #283038; /* Dark text on green button */
+            border-radius: 4px;
+        }
+        
+        .btn-signup:hover {
+            background-color: var(--accent-green-hover);
+        }
+
+        /* The big CTA button */
+        .btn-home {
+            background-color: var(--accent-green);
+            color: var(--text-white);
+            padding: 18px 45px;
+            border-radius: 50px; /* Fully rounded pills */
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 40px;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(140, 233, 169, 0.2);
+        }
+
+        .btn-home:hover {
+            transform: translateY(-3px);
+            background-color: var(--accent-green-hover);
+            box-shadow: 0 6px 20px rgba(140, 233, 169, 0.4);
+        }
+
+        /* 5. Main Content Area */
+        main.container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 60px 40px 100px; /* Left padding slightly larger to push text */
+            max-width: 1440px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .text-content {
+            flex: 1;
+            z-index: 2; /* Ensure text is above if overlap occurs */
+        }
+
+        .text-content h1 {
+            font-size: 72px;
+            line-height: 1.1;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .image-content {
+            flex: 1.2; /* Image takes slightly more space */
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+            /* Simple drop shadow filter to help it pop */
+            filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.5)); 
+        }
+
+        /* 6. Responsive Design for Mobile/Tablets */
+        @media (max-width: 1024px) {
+            header.navbar {
+                padding: 20px;
+            }
+            .nav-links { 
+                display: none; /* Hide nav on mobile for simplicity */ 
+            }
+            
+            main.container {
+                flex-direction: column-reverse; /* Image on top, text on bottom */
+                padding: 20px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .text-content h1 {
+                font-size: 42px;
+                margin-top: 20px;
+            }
+
+            .image-content {
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span>⚡</span> 404forme
+        </div>
+        <nav class="nav-links">
+            <a href="#">Illustrations ▾</a>
+            <a href="#">Documentation</a>
+            <a href="#">About</a>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-login">Login</a>
+                <a href="#" class="btn btn-signup">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="text-content">
+            <h1>Go Home ,<br>You're Drunk!</h1>
+            <a href="/" class="btn btn-home">BACK TO HOME</a>
+        </div>
+
+        <div class="image-content">
+            <img src="boy-illustration.png" 
+                 alt="404 Error: Boy walking into a number portal"
+                 onerror="this.style.display='none'; document.getElementById('alt-text').style.display='block';">
+            
+            <div id="alt-text" style="display:none; color: #555; border: 2px dashed #555; padding: 50px;">
+                [Image File Missing: Please save your 'boy-illustration.png' here]
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Simple script to handle button interaction
+        document.addEventListener('DOMContentLoaded', () => {
+            const homeBtn = document.querySelector('.btn-home');
+            
+            homeBtn.addEventListener('click', (e) => {
+                // If you want to prevent actual navigation for testing:
+                // e.preventDefault();
+                console.log("User clicked 'Back to Home'");
+                
+                // Add a little click animation effect via JS
+                homeBtn.style.transform = "scale(0.95)";
+                setTimeout(() => {
+                    homeBtn.style.transform = "scale(1)";
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>

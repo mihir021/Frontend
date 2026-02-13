@@ -1,0 +1,32 @@
+< 1 > square Method 
+    --> document.forms["formname"]["elementname"].value
+
+< 2 > dot Method 
+    --> document.formname.elementname.value
+
+< 3 > dom Method 
+    --> document.getElementById("id").value
+
+---------------------------------------------------------------------------------------------------------------------------
+                                        Regular Expression
+---------------------------------------------------------------------------------------------------------------------------
+
+< 1 > /pattern/modifiers
+
+--> How to test pattens ?
+    using test() method
+
+--> RegExObj.test("string")
+
+---------------------------------------------------------------------------------------------------------------------------
+                                        Local storage and session storage
+---------------------------------------------------------------------------------------------------------------------------
+
+--> Save storage setItem("key","value")
+--> Retrieve storage
+--> getItem("key") 
+
+--> remove storage
+--> for one storage key removeItem("key")
+--> for all clear()
+
