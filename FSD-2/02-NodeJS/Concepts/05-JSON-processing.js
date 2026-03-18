@@ -1,18 +1,22 @@
-const student = [
-    {
-        name:'abc',
-        age: 30
-    },
-    {
-        name:'xyz',
-        age: 20
-    }
-]
+/*
+ * Topic: JSON processing with Node.js
+ *
+ * Steps:
+ * 1) Create a JavaScript array of student objects.
+ * 2) Convert it to JSON string and store in student.txt.
+ * 3) Read the file again and parse JSON back to object.
+ */
 
-var fs = require('fs')
+const fs = require("fs");
 
-fs.writeFileSync('../data/student.txt', JSON.stringify(student))
+const students = [
+  { name: "abc", age: 30 },
+  { name: "xyz", age: 20 },
+];
 
-data = fs.readFileSync('../data/student.txt', 'utf-8')
+fs.writeFileSync("../data/student.txt", JSON.stringify(students));
 
-console.log(JSON.parse(data))
+const fileData = fs.readFileSync("../data/student.txt", "utf-8");
+const parsedStudents = JSON.parse(fileData);
+
+console.log(parsedStudents);
