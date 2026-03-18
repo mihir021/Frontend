@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js - setInterval()</title>
+    <script>
+        /*
+         * Topic: setInterval()
+         *
+         * setInterval() executes a function REPEATEDLY at a fixed time interval.
+         *
+         * Syntax: setInterval(function, interval_in_ms)
+         *
+         * In this example:
+         *   - Variables 'a' and 'b' are incremented each time
+         *   - A calculation (++a + ++b) * 78789999 * a runs every 1000ms (1 second)
+         *   - The result is displayed inside the <p> element
+         *
+         * Open this file in a browser to see the value update every second.
+         */
+
+        let a = 2 , b = 7
+
+        // Run the calculation every 1000ms (1 second)
+        setInterval(()=>{
+            document.getElementById("pi").innerHTML = (++a + ++b)*78789999*a
+        },1000)
+    </script>
+</head>
+<body>
+    <p id="pi"></p>
+</body>
+</html>

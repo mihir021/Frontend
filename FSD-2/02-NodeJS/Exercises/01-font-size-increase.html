@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1 - Font Size Increase with setInterval</title>
+    <script>
+        /*
+         * Exercise 1: Increase Font Size Using setInterval()
+         *
+         * Task:
+         *   - On button click, increase the font size of a <p> element
+         *   - Font increases by 1px every 50ms
+         *   - Stops increasing when font size reaches 50px
+         *
+         * Concepts Used:
+         *   - setInterval() for repeated execution
+         *   - DOM manipulation (style.fontSize)
+         *   - Conditional check to stop at max size
+         */
+
+        let size = 15;
+
+        function increaseFontSize() {
+            const text = document.getElementById("myid");
+
+            // Increase font size by 1px every 50ms, stop at 50px
+            setInterval(() => {
+                if (size >= 50) {
+                    return;
+                }
+                text.style.fontSize = ++size + "px";
+            }, 50);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="increaseFontSize()">Increase</button>
+    <p id="myid" style="font-size: 15px;">Hello</p>
+</body>
+</html>

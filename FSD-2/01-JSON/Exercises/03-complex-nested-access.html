@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Complex Nested Access</title>
+    <script>
+        /*
+         * Exercise 3: Complex Nested JSON Access
+         *
+         * This exercise has a deeply nested JSON-like structure
+         * with multiple levels of arrays and objects.
+         *
+         * The console.log statements extract values that form a message:
+         *   "Hi ! we are 4 of IT branch Students"
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        const a =
+        {
+            "A":"LJU",
+            "B":["IT","CSE","CE"],
+            "C":
+            [
+                {
+                    "D":"Hi",
+                    "E":["are",4,{"F":["sem","we"]}]
+                }
+            ],
+            "G":{
+                "H":"Students",
+                "I":["of","!"]
+            },
+            "J":[
+                    {
+                        "K":"Python",
+                        "L":"branch"
+                    },
+                    "FSD-2"
+                ]
+        }
+
+        // Extracting values to form the sentence:
+        console.log(a["C"][0]["D"])            // Hi
+        console.log(a["G"]["I"][1])            // !
+        console.log(a["C"][0]["E"][2]["F"][1])  // we
+        console.log(a["C"][0]["E"][0])          // are
+        console.log(a["G"]["H"])               // Students
+        console.log(a["G"]["I"][0])            // of
+        console.log(a["C"][0]["E"][2]["F"][0])  // sem
+        console.log(a["C"][0]["E"][1])          // 4
+        console.log(a["G"]["I"][0])            // of
+        console.log(a["B"][0])                 // IT
+        console.log(a["J"][0]["L"])            // branch
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - Deep Nested Access</title>
+    <script>
+        /*
+         * Exercise 2: Deep Nested JSON Access
+         *
+         * Practice accessing values from a deeply nested structure
+         * that contains arrays of objects and nested objects.
+         *
+         * Structure:
+         *   "DS"  -> Array of objects (each with name, course, content)
+         *   "XYZ" -> Object with name and topic array
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        const a =
+        {
+            "DS":
+            [
+                {
+                    'name':'tree',
+                    'course':'into',
+                    'content':['1','B','C']
+                },
+                {
+                    "name":"tree1",
+                    "course":"into1",
+                    "content":['1','B','C','d']
+                }
+            ],
+            "XYZ":
+            {
+                'name':"gap",
+                'topic':["BFS","DFS","S"]
+            }
+        }
+
+        // Accessing second item in DS array -> name
+        console.log(a["DS"][1]["name"])     // Output: tree1
+
+        // Accessing first item in DS array -> name
+        console.log(a["DS"][0]["name"])     // Output: tree
+
+        // Accessing nested object property
+        console.log(a["XYZ"]["name"])      // Output: gap
+
+        // Accessing whole array from nested object
+        console.log(a["XYZ"]["topic"])     // Output: ["BFS","DFS","S"]
+
+        // Accessing first element of nested array
+        console.log(a["XYZ"]["topic"][0])  // Output: BFS
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

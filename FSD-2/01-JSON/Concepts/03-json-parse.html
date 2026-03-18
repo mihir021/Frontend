@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - parse()</title>
+    <script>
+        /*
+         * Topic: JSON.parse()
+         *
+         * JSON.parse() converts a JSON string back into a JavaScript object.
+         *
+         * Common uses:
+         *   - Reading data from localStorage
+         *   - Handling data received from a server/API
+         *
+         * Flow: Object -> JSON.stringify() -> String -> JSON.parse() -> Object
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        // Converting a JSON string to a JS object using JSON.parse()
+        let obj = JSON.parse('{ "var1" : "LJ","var2" : "uni"}')
+
+        // Output will be a JS object: {var1: "LJ", var2: "uni"}
+        console.log(obj)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

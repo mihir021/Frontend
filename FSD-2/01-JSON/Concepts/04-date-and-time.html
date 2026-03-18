@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - Date and Time Handling</title>
+    <script>
+        /*
+         * Topic: Handling Date Values in JSON
+         *
+         * JSON does not have a native Date data type.
+         * Dates are stored as strings (e.g., "1997-03-14").
+         * After parsing, we need to manually convert the date string
+         * into a JavaScript Date object using new Date().
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        // Step 1: Parse a JSON string that contains a date field
+        const obj = JSON.parse('{"name":"abc","age":17,"dob":"1997-03-14"}')
+
+        // Step 2: Access the date string from the parsed object
+        console.log(obj.dob)
+
+        // Step 3: Convert the date string to a JavaScript Date object
+        a = new Date(obj.dob)
+        console.log(a)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js - setTimeout()</title>
+    <script>
+        /*
+         * Topic: setTimeout()
+         *
+         * setTimeout() executes a function ONCE after a specified delay (in ms).
+         *
+         * Syntax: setTimeout(function, delay_in_ms)
+         *
+         * In this example:
+         *   - The function myfun() sets the text of <p> to "LJU"
+         *   - It runs after a 5-second (5000ms) delay
+         *
+         * Open this file in a browser and wait 5 seconds to see the result.
+         */
+
+        function myfun(){
+            document.getElementById("demo").innerHTML = "LJU"
+        }
+
+        // Call myfun() after 5000 milliseconds (5 seconds)
+        setTimeout(myfun,5000)
+    </script>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+</html>

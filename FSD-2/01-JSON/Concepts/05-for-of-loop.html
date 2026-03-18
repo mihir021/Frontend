@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - for...of Loop</title>
+    <script>
+        /*
+         * Topic: Iterating Over an Array of Objects Using for...of Loop
+         *
+         * The for...of loop iterates over the VALUES of an iterable (like an array).
+         * Each iteration gives the actual object from the array.
+         *
+         * Syntax: for (let item of array) { ... }
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        // Array of objects (JSON-like structure)
+        let s =
+        [{
+            "name":"abc",
+            "age":20,
+        },
+        {
+            "name":"xyz",
+            "age":30
+        }]
+
+        // for...of gives us each object directly
+        for(let s1 of s){
+            console.log(s1.name + "-" + s1.age)
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

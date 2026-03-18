@@ -1,0 +1,1 @@
+{"shape":[{"name":"circle","diameter":10},{"name":"square","side":5}],"cp":31.41592653589793,"sp":20}

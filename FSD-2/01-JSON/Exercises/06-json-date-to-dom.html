@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - JSON Date to DOM (Problem 36)</title>
+
+    <!--
+        Exercise 6: JSON Date to DOM (Problem 36)
+
+        Task:
+        - Parse a JSON object that has a "date" property in "dd/mm/yy" format
+        - Convert the date string to a JavaScript Date object
+        - Display the date on the page when the button is clicked
+    -->
+
+    <script>
+        /*
+         * On button click:
+         *   1. Read the date string from a JSON object
+         *   2. Convert it to a JavaScript Date object using new Date()
+         *   3. Display the result inside the <p> element using innerHTML
+         */
+        function getTime(){
+            let a = {"date":"2006-11-11"}
+            c = new Date(a["date"])
+            // console.log(a)
+            let data = document.getElementById("fillData")
+            data.innerHTML = c
+        }
+
+    </script>
+</head>
+<body>
+    <p id="fillData"></p>
+    <button onclick="getTime()"> click to get date in ind</button>
+</body>
+</html>

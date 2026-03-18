@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Dynamic Object from Array</title>
+    <script>
+        /*
+         * Exercise 4: Creating a Dynamic Object from an Array
+         *
+         * This exercise defines a function that:
+         *   1. Takes an array as input
+         *   2. Creates an empty object
+         *   3. Uses the FIRST element of the array as the key
+         *   4. Uses the LAST element of the array as the value
+         *   5. Returns the new object
+         *
+         * Example:
+         *   Input:  ["abc", "def", "ghi", "jkl"]
+         *   Output: { abc: "jkl" }
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        // Function to create an object from array's first and last elements
+        function fun(a){
+            let temp = {
+
+            }
+            temp[a[0]]=a[a.length - 1]
+            return temp
+        }
+
+        // Test: first element "abc" becomes key, last element "jkl" becomes value
+        let data = ["abc","def","ghi","jkl"]
+        console.log(fun(data))  // Output: { abc: "jkl" }
+    </script>
+</head>
+<body>
+</body>
+</html>

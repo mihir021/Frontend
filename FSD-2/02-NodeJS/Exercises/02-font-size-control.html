@@ -1,0 +1,74 @@
+<!--
+    Exercise 2: Font Size Control with Increment, Decrement, and Stop
+
+    Task:
+    1. Add 3 buttons: Increase, Decrease, and Stop
+    2. Increase button - increases font size, stops at 200px or when Stop is clicked
+    3. Decrease button - decreases font size, stops at 20px or when Stop is clicked
+    4. Stop button - stops any ongoing increase/decrease
+    5. Interval is 100ms, default font size is 50px
+
+    Concepts Used:
+    - setInterval() and clearInterval() for timing control
+    - DOM style manipulation (fontSize)
+    - Managing interval IDs to prevent conflicts
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - Font Size Control (Increment/Decrement/Stop)</title>
+    <script>
+        let size = 50;          // Default font size in px
+        let intervalId = null;  // Stores the current interval ID
+
+        /*
+         * updateFont(step) - Core function for changing font size
+         *   step > 0 : increases font size (used by Increase button)
+         *   step < 0 : decreases font size (used by Decrease button)
+         *
+         * It first clears any existing interval to prevent conflicts,
+         * then starts a new interval to update font every 100ms.
+         */
+        function updateFont(step) {
+            const text = document.getElementById("myid");
+            clearInterval(intervalId);
+
+            intervalId = setInterval(() => {
+                // Stop at upper limit (200px) or lower limit (20px)
+                if ((step > 0 && size >= 200) || (step < 0 && size <= 20)) {
+                    clearInterval(intervalId);
+                    intervalId = null;
+                    return;
+                }
+
+                size += step;
+                text.style.fontSize = size + "px";
+            }, 100);
+        }
+
+        // Increase font size by 1px per interval
+        function increaseFontSize() {
+            updateFont(1);
+        }
+
+        // Decrease font size by 1px per interval
+        function decFontSize() {
+            updateFont(-1);
+        }
+
+        // Stop any ongoing font size change
+        function stopBtnCall() {
+            clearInterval(intervalId);
+            intervalId = null;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="increaseFontSize()">Increase</button>
+    <button onclick="decFontSize()">Dec</button>
+    <button onclick="stopBtnCall()">Stop</button>
+    <p id="myid" style="font-size: 50px;">Hello</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - Accessing Values</title>
+    <script>
+        /*
+         * Topic: Accessing Values from a JavaScript Object
+         *
+         * This example demonstrates different ways to access values:
+         *   1. Dot notation        -> object.key
+         *   2. Bracket notation    -> object["key"]
+         *   3. Nested object       -> object.nested.key
+         *   4. Array property      -> object.array[index]
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        // Creating a JavaScript object with different types of values
+        let person =
+        {
+            name: "abc",
+            age : 20,
+            city : "botad",
+            skills : ["html",true,20],
+            add :
+            {
+                state:"Gujrat",
+                country:"Ind"
+            }
+        }
+
+        // 1. Dot notation - access 'name'
+        console.log(person.name)
+
+        // 2. Bracket notation - access 'age'
+        console.log(person["age"])
+
+        // 3. Accessing an array property - 'skills'
+        console.log(person.skills)
+
+        // 4. Accessing nested object value - 'add.state'
+        console.log(person.add.state)
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

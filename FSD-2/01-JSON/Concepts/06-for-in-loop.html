@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - for...in Loop</title>
+    <script>
+        /*
+         * Topic: Iterating Over an Array of Objects Using for...in Loop
+         *
+         * The for...in loop iterates over the KEYS (indices) of an object or array.
+         * When used with an array, it gives the index (0, 1, 2...) not the value.
+         * We then use the index to access the value: array[key]
+         *
+         * Syntax: for (let key in array) { ... }
+         *
+         * Note: for...in is mainly designed for objects.
+         *       for...of is preferred for arrays.
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        // Array of objects
+        let s =
+        [{
+            "name":"abc",
+            "age":20,
+        },
+        {
+            "name":"xyz",
+            "age":30
+        }]
+
+        // for...in gives us the INDEX (key), not the value
+        for(let key in s){
+            console.log(s[key] + "-" + key)
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

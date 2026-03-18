@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1 - Nested Object Access</title>
+    <script>
+        /*
+         * Exercise 1: Nested Object Access
+         *
+         * Practice accessing values from nested objects using:
+         *   - Bracket notation:  object["key"]
+         *   - Dot notation:      object.key
+         *   - Array indexing:    object.array[index]
+         *   - Nested object inside array: object["key"][index]["nestedKey"]
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        // Object with string, array, and nested properties
+        const a =
+        {
+            'name':'tree',
+            'course':'intro',
+            'content':['1','B','C']
+        }
+
+        console.log(a["name"])        // Output: tree (bracket notation)
+        console.log(a.course)         // Output: intro (dot notation)
+        console.log(a.content)        // Output: ['1','B','C'] (whole array)
+        console.log(a["content"][1])  // Output: B (array element by index)
+
+        // Object with arrays and nested object inside an array
+        const user = {
+            "name":["abc","def","ghi"],
+            "name":28,
+            "course1":["fsd-1","DE","FSD-2"],
+            "add":["T1","T2",{"T3":"give"} ]
+        }
+
+        // Accessing a nested object value inside an array
+        console.log(user["add"][2]["T3"])  // Output: give
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

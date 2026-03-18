@@ -1,0 +1,93 @@
+------------------------------------------------------------
+Node.js Notes
+------------------------------------------------------------
+
+Node.js = JavaScript runtime used to run JS outside browser.
+It is mostly used for backend development.
+
+------------------------------------------------------------
+1> Why Node.js?
+------------------------------------------------------------
+
+- Fast (V8 engine)
+- Good for APIs and real-time apps
+- Single language (JavaScript) for frontend + backend
+- Huge package ecosystem (npm)
+
+
+------------------------------------------------------------
+2> Sync vs Async
+------------------------------------------------------------
+
+Sync:
+- Executes line by line
+- Blocks next code until current task finishes
+
+Async:
+- Non-blocking
+- Better for server performance
+
+Example:
+```js
+const fs = require("fs");
+
+fs.readFile("demo.txt", "utf-8", (err, data) => {
+  if (err) {
+    console.log(err);
+    return;
+  }
+  console.log(data);
+});
+
+console.log("This prints before file data");
+```
+
+------------------------------------------------------------
+3> File System (sync method)
+------------------------------------------------------------
+
+1. fs.mkdirSync() --> create directory
+2. fs.readFileSync() --> Read data from file
+3. fs.writeFileSync() --> write data
+4. fs.appendFileSync() --> add more data
+5. fs.renameSync() --> rename File
+6. fs.unlinkSync() --> remove file (Delete)
+7. fs.rmdirSync() --> remove folder
+8. fs.copyFileSync() --> copies a file
+
+------------------------------------------------------------
+4> File System (Async method)
+------------------------------------------------------------
+
+1. fs.mkdir() --> create directory
+2. fs.readFile() --> Read data from file
+3. fs.writeFile() --> write data
+4. fs.appendFile() --> add more data
+5. fs.rename() --> rename File
+6. fs.unlink() --> remove file (Delete)
+7. fs.rmdir() --> remove folder
+8. fs.copyFile() --> copies a file
+
+------------------------------------------------------------
+5> JSON processing 
+------------------------------------------------------------
+
+------------------------------------------------------------
+6> JSON processing 
+------------------------------------------------------------
+
+1. path.extname() --> get file extension
+2. path.basename() --> get file name
+3. path.dirname() --> get directory name
+4. path.parse() --> get all info as object
+
+------------------------------------------------------------
+7> Event module
+------------------------------------------------------------
+
+1. eventEmitter.on() (event,[arg1],[arg2],...) --> listen to event
+2. eventEmitter.emit() (eventname,listener) --> trigger event
+3. eventEmitter.addListener(event,listener) --> add listener to event
+4. eventEmitter.removeListener(event,listener) --> remove listener from event
+5. eventEmitter.removeAllListeners(event) --> remove all listeners from event
+6. eventEmitter.listen(eventName) --> get array of listeners for event

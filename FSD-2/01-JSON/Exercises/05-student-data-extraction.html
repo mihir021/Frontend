@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Student Data Extraction (Problem 33)</title>
+    <script>
+        /*
+         * Exercise 5: Student Data Extraction (Problem 33)
+         *
+         * A complex nested JSON object representing student data.
+         * The goal is to extract specific values using bracket notation
+         * to reconstruct a meaningful output about the student's achievement.
+         *
+         * The console.log statements extract:
+         *   "ramesh got 99 outof 100 marks and secured 1st rank"
+         *
+         * Open the browser console (F12 -> Console) to see the output.
+         */
+
+        const a =
+        {
+            "name":"ramesh",
+            "subjects":["maths","sci","che"],
+            "grade":
+            {
+                "type":"marks",
+                "total":[88,90,99,87]
+            },
+            "range":{"opt":"100","type":["secure","subject","class"]},
+
+            "achive":[{"Rank":"rank","place":[1,2,3]},{"ord":"st"},"12"],
+
+            "joints":["outof","got","and"]
+        }
+
+        // Extracting individual values to form the sentence:
+        console.log(a["name"])                  // ramesh
+        console.log(a["joints"][1])             // got
+        console.log(a["grade"]["total"][2])     // 99
+        console.log(a["joints"][0])             // outof
+        console.log(a["range"]["opt"])          // 100
+        console.log(a["grade"]["type"])         // marks
+        console.log(a["joints"][2])             // and
+        console.log(a["range"]["type"][0])      // secure
+        console.log(a["achive"][0]["place"][0]) // 1
+        console.log(a["achive"][1]["ord"])      // st
+        console.log(a["achive"][0]["Rank"])     // rank
+    </script>
+</head>
+<body>
+
+</body>
+</html>

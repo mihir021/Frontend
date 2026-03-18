@@ -1,0 +1,107 @@
+------------------------------------------------------------
+JSON (JavaScript Object Notation) - Student Notes
+------------------------------------------------------------
+
+JSON is a text format used to store and send data.
+
+------------------------------------------------------------
+1> JSON Syntax Rules
+------------------------------------------------------------
+
+- Data is written as `key : value` pairs.
+- JSON object starts with `{` and ends with `}`.
+- Keys must be inside double quotes.
+- String values must be inside double quotes.
+- No trailing comma after last item.
+
+Valid JSON:
+{
+  "name": "abc",
+  "age": 20
+}
+
+Not valid JSON (this is JavaScript object style):
+{
+  name: "abc",
+  age: 20
+}
+
+------------------------------------------------------------
+2> JSON Data Types
+------------------------------------------------------------
+
+1. String
+   {"name": "LJU"}
+
+2. Number
+   {"age": 20}
+
+3. Object (nested JSON object)
+   {"emp": {"name": "LJU", "age": 20}}
+
+4. Array
+   {"emp": ["abc", "xyz", "pqr"]}
+
+5. Boolean
+   {"sale": false}
+
+6. Null
+   {"middleName": null}
+
+------------------------------------------------------------
+3> Accessing Values (in JavaScript after parsing JSON)
+------------------------------------------------------------
+
+1. Dot notation
+   object.key
+
+2. Bracket notation
+   object["key"]
+
+3. Nested object
+   object.emp.name
+
+4. Array inside object
+   object.emp[0]
+
+------------------------------------------------------------
+4> JavaScript Built-in JSON Functions
+------------------------------------------------------------
+
+1. JSON.stringify()
+   Converts object/array to JSON string.
+
+   Common uses:
+   - Store data in localStorage
+   - Send data to server/API
+
+2. JSON.parse()
+   Converts JSON string to JavaScript object.
+
+   Common uses:
+   - Read data from localStorage
+   - Handle data received from server/API
+
+------------------------------------------------------------
+Quick Flow
+------------------------------------------------------------
+
+Object -> JSON.stringify() -> JSON string -> JSON.parse() -> Object
+
+------------------------------------------------------------
+4> for of loop (JSON array)
+------------------------------------------------------------
+
+let s =
+        [{
+            "name":"abc",
+            "age":20,
+        },
+        {
+            "name":"xyz",
+            "age":30
+        }]
+
+        for(let s1 of s){
+            console.log(s1.name + "-" + s1.age    )
+        }
