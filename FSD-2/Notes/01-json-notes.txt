@@ -1,5 +1,5 @@
 ------------------------------------------------------------
-JSON (JavaScript Object Notation) - Student Notes
+JSON (JavaScript Object Notation) 
 ------------------------------------------------------------
 
 JSON is a text format used to store and send data.

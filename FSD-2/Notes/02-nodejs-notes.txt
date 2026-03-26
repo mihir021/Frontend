@@ -91,3 +91,10 @@ console.log("This prints before file data");
 4. eventEmitter.removeListener(event,listener) --> remove listener from event
 5. eventEmitter.removeAllListeners(event) --> remove all listeners from event
 6. eventEmitter.listen(eventName) --> get array of listeners for event
+
+-------------------------------------------------------------------------
+8> Using Event handling file write,append and read the data on console
+-------------------------------------------------------------------------
+
+
+
