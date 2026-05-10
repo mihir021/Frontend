@@ -1,0 +1,23 @@
+<!-- // to configer the multer midel ware perform following task creat a html file named file.html
+// this file conatins hading in h3 tag uplode your cv in red coulor and a form 
+// with input type filed 
+// craete  js file named file.js and link js and html file to browser 
+// after uploding a file display msg on /uplode page and msg will be file has been uploded
+// 4. save uploded file to specific directrory named uploded  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="color:red">Upload your CV</h3>
+    <form action="/uploadfile" method="post" enctype="multipart/form-data">
+        <input type="file" name="lju" />
+        <input type="submit" value="Upload"/>
+    </form>
+    
+</body>
+</html>

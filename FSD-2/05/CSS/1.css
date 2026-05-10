@@ -1,0 +1,11 @@
+.li_p {
+    list-style: none;
+    font-size: 100px;
+    color: red;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}

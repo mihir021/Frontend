@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Form</title>
+</head>
+<body>
+    <!-- The submitted values are saved as cookies by Ctask.js. -->
+    <h1>Cookie Form</h1>
+    <form action="/next" method="post">
+        <label>
+            First Name:
+            <input type="text" name="fname" placeholder="First Name" required>
+        </label>
+        <br><br>
+        <label>
+            Last Name:
+            <input type="text" name="lname" placeholder="Last Name" required>
+        </label>
+        <br><br>
+        <label>
+            Password:
+            <input type="password" name="password" placeholder="Password" required>
+        </label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+package.json: npm init
+to install express js: npm install express
+to check express is installed or not:
+    1. check package.json-> dependencies -> "express": "^5.2.1"
+or  2. in cmd: npm list express -> 5.2.1
+-> Express Js is framework of Node Js
+
+
+==> Routing
+
+(5m)
+==> JSON Proccesing:
+    1. res.write()
+    2. res.send()
+    3. res.json()
+
+==> Route Parameters:
+    1.req.params
+
+
+==> Query Parameters
+

@@ -1,0 +1,28 @@
+{
+  "models": [
+    {
+      "title": "Claude Sonnet on Bedrock",
+      "provider": "bedrockimport",
+      "model": "eu.anthropic.claude-sonnet-4-6",
+      "region": "eu-north-1",
+      "accessKeyId": "YOUR_ACCESS_KEY_ID",
+      "secretAccessKey": "YOUR_SECRET_ACCESS_KEY"
+    },
+    {
+      "title": "Claude Opus on Bedrock",
+      "provider": "bedrockimport",
+      "model": "eu.anthropic.claude-opus-4-6-v1",
+      "region": "eu-north-1",
+      "accessKeyId": "YOUR_ACCESS_KEY_ID",
+      "secretAccessKey": "YOUR_SECRET_ACCESS_KEY"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Claude Haiku (Autocomplete)",
+    "provider": "bedrockimport",
+    "model": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "region": "eu-north-1",
+    "accessKeyId": "YOUR_ACCESS_KEY_ID",
+    "secretAccessKey": "YOUR_SECRET_ACCESS_KEY"
+  }
+}
